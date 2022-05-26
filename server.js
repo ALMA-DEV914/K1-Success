@@ -51,5 +51,5 @@ app.get('/api/stories', (req, res) => {
 })
 
 app.listen(3001, () => {
-    console.log(`API server now on ${PORT}"`)
+    console.log(`API server now on ${PORT}`)
 })
