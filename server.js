@@ -1,71 +1,20 @@
+// call the express to run this code/file
 const express = require('express');
-const {stories} = require('./data/stories');
-
+// assign the url path/port
 const PORT = process.env.PORT || 3001;
 const app = express();
+// call the routes for the files
+const apiRoutes = require('./routes/apiRoutes');
+const htmlRoutes = require('./routes/htmlRoutes');
+// use middleware for the root of the file path
+app.use(express.urlencoded({ extended: true }));
+app.use(express.json());
+app.use(express.static('public'));
 
-function filterByQuery(query, storiesArray ){
-    let processTimeArray = [];
-    // Note that we save the storiesArray as filteredResults here:
-    let filteredResults = storiesArray;
-
-    if(query.processTime){
-        // Save processTime as a dedicated array.
-    // If processTime is a string, place it into a new array and save.
-        if(typeof query.processTime === 'string'){
-            processTimeArray = [query.processTime]
-        } else {
-            processTimeArray = query.processTime
-        }
-        // Loop through each trait in the processTime array:
-
-        processTimeArray.forEach(processTime => {
-            // Check the trait against each story in the filteredResults array.
-      // Remember, it is initially a copy of the storiesArray,
-      // but here we're updating it for each processTime in the .forEach() loop.
-      // For each processTime being targeted by the filter, the filteredResults
-      // array will then contain only the entries that contain the process time,
-      // so at the end we'll have an array of stories that have every one 
-      // of the processTime when the .forEach() loop is finished.
-            filteredResults = filteredResults.filter(story => story.processTime.indexOf(processTime) !== -1)
-        });
-    }
-
-    if(query.status){
-        filteredResults = filteredResults.filter(story => story.status === query.status);
-    }
-    if(query.photo){
-        filteredResults = filteredResults.filter(story => story.processTime === query.photo)
-    }
-    if(query.name){
-        filteredResults = filteredResults.filter(story => story.name === query.name)
-    }
-    return filteredResults;
-}
-
-function findById(id, storiesArray){
-    const result = storiesArray.filter(story => story.id === id[0]);
-    return result;
-}
-
-app.get('/api/stories', (req, res) => {
-    let results = stories;
-    if(req.query){
-        results = filterByQuery(req.query, results);
-    }
-    res.json(results);
-});
-
-app.get('/api/stories/:id', (req, res) => {
-    const result = findById(req.params.id, stories);
-    if(result){
-    res.json(result);
-    } else {
-        res.send(404)
-    }
-})
-
-
+// Use apiRoutes
+app.use('/api', apiRoutes);
+app.use('/', htmlRoutes);
+// calling the port to functions
 app.listen(PORT, () => {
-    console.log(`API server now on ${PORT}`)
-})
+  console.log(`API server now on port ${PORT}!`);
+});

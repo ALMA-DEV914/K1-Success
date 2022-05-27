@@ -1,0 +1,70 @@
+{
+  "users": [
+    {
+      "id": "0",
+      "name": "Jack",
+      "age": 28,
+      "favoriteStory": "lara and Bob"
+    },
+    {
+      "id": "1",
+      "name": "Nikki",
+      "age": 21,
+      "favoriteStory": "Isabella and Richard"
+    },
+    {
+      "id": "2",
+      "name": "Isabella",
+      "age": 35,
+      "favoriteStory": "Isabella and Richard"
+    },
+    {
+      "id": "3",
+      "name": "Lito",
+      "age": 18,
+      "favoriteStory": "Linda and Henry"
+    },
+    {
+      "id": "4",
+      "name": "Beverly",
+      "age": 20,
+      "favoriteStory": "Ryan and Vivian"
+    },
+    {
+      "id": "5",
+      "name": "Gemma",
+      "age": 42,
+      "favoriteStory": "Alex and Girlie"
+    },
+    {
+      "id": "6",
+      "name": "Emmy",
+      "age": 23,
+      "favoriteStory": "Amiko and Kinky"
+    },
+    {
+      "id": "7",
+      "name": "Emmy",
+      "age": 29,
+      "favoriteStory": "Joradn and Lily"
+    },
+    {
+      "id": "8",
+      "name": "Lernantino",
+      "age": 29,
+      "favoriteStory": "Alex and Girlie"
+    },
+    {
+      "name": "Les",
+      "age": 64,
+      "favoriteStory": "Kim and Francis",
+      "id": "9"
+    },
+    {
+      "name": "Almita",
+      "age": 25,
+      "favoriteStory": "Lion and Taurus",
+      "id": "10"
+    }
+  ]
+}

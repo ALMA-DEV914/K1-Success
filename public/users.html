@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>K1 Success - Users</title>
+  <link href="https://fonts.googleapis.com/css?family=Karla:400,700|Rubik:400,400i,700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./assets/css/style.css" />
+</head>
+
+<body>
+  <header class="py-4 mb-3">
+    <div class="flex-row justify-space-between align-center container-fluid mx-auto">
+      <h1 class="text-dark p-3">K1 Success User</h1>
+      <h3 class="text-dark p-3">A K1 Success User Catalog</h3>
+    </div>
+    <div class="container-fluid mx-auto" id="container">
+      <section class="p-3 my-4">
+        <h2 class="text-light">Your guide to the K1 process.</h2>
+        <p class="text-light">In terms of filing such documents or immigration application, we want to have an idea where to begin, what to expect, and we want to hear an inspiring stories of success. This site is intend on sharing successful stories of this K1 journey. Why don't you share your love ride and inspired others.</p>
+      </section>
+    </div>
+  </header>
+
+  <main class="container-fluid mx-auto mb-3">
+    <section class="p-3 mb-3 bg-dark flex-row align-center">
+      <h2 class="text-dark col-12 col-lg-5">Our Users.</h2>
+      <div class="col-12 col-lg-7 flex-row text-center justify-space-around align-center">
+        <a class="btn col-12 col-md-auto mx-2" href="/">Add To Our Catalog</a>
+        <a class="btn col-12 col-md-auto mx-2" href="/stories">View Stories</a>
+      </div>
+    </section>
+
+    <section class="my-2 flex-row justify-space-between">
+      <div class="col-12 col-lg-3 bg-dark p-3">
+        <h3 class="text-light">Search For Users</h3>
+        <form id="user-form">
+          <label for="name-input" class="form-label">Search by name</label>
+          <input name="name" id="name-input" class="form-input" />
+          <label for="age-input" class="form-label">Search by age</label>
+          <input name="age" id="age-input" class="form-input" type="number" />
+          <button class="btn">Get Users</button>
+        </form>
+      </div>
+      <div class="col-12 col-lg-9 p-3">
+
+        <div class="flex-row justify-space-between" id="display-area"></div>
+      </div>
+    </section>
+
+
+  </main>
+
+  <script src="./assets/js/user.js"></script>
+</body>
+
+</html>

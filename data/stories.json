@@ -1,69 +1,154 @@
 {
-    "stories": [
-      {
-        "id": "0",
-        "name": "Lara and Bob",
-        "status": "married",
-        "photo": "https://images.unsplash.com/photo-1591969851586-adbbd4accf81?crop=entropy&cs=tinysrgb&fm=jpg&ixlib=rb-1.2.1&q=80&raw_url=true&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=987",
-        "processTime": ["1.5years", "2years"]
-      },
-      {
-        "id": "1",
-        "name": "Terry and Jenny",
-        "status": "in progress",
-        "photo": "https://images.unsplash.com/photo-1637870996864-65dc1c00f4dc?crop=entropy&cs=tinysrgb&fm=jpg&ixlib=rb-1.2.1&q=80&raw_url=true&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2340",
-        "processTime": [ "9-12months", "1year"]
-    
-      },
-      {
-        "id": "2",
-        "name": "Tina and James",
-        "status": "married",
-        "photo": "https://images.unsplash.com/photo-1426543881949-cbd9a76740a4?crop=entropy&cs=tinysrgb&fm=jpg&ixlib=rb-1.2.1&q=80&raw_url=true&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=987",
-        "processTime": ["7-9months", "9-12months"]
-      },
-      {
-        "id": "3",
-        "name": "Almita and Peter",
-        "status": "married",
-        "photo": "https://images.unsplash.com/photo-1591969851586-adbbd4accf81?crop=entropy&cs=tinysrgb&fm=jpg&ixlib=rb-1.2.1&q=80&raw_url=true&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=987",
-        "processTime": ["4-6months", "7-9months"]
-      },
-      {
-        "id": "4",
-        "name": "Joane and Michael",
-        "status": "in-progress",
-        "photo": "https://images.unsplash.com/photo-1591969851586-adbbd4accf81?crop=entropy&cs=tinysrgb&fm=jpg&ixlib=rb-1.2.1&q=80&raw_url=true&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=987",
-        "processTime": ["9-12months", "1year"]
-      },
-      {
-        "id": "5",
-        "name": "Joseph and Mira",
-        "status": "married",
-        "photo": "https://images.unsplash.com/photo-1506014299253-3725319c0f69?crop=entropy&cs=tinysrgb&fm=jpg&ixlib=rb-1.2.1&q=60&raw_url=true&ixid=MnwxMjA3fDB8MHxzZWFyY2h8OXx8Y291cGxlfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=800",
-        "processTime": ["4-6months", "7-9months"]
-      },
-
-      {
-        "id": "6",
-        "name": "Gina and Keven",
-        "status": "married",
-        "photo": "https://images.unsplash.com/photo-1591969851586-adbbd4accf81?crop=entropy&cs=tinysrgb&fm=jpg&ixlib=rb-1.2.1&q=80&raw_url=true&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=987",
-        "processTime": ["4-6months", "7-9months"]
-      },
-      {
-        "id": "7",
-        "name": "Mirasol and Jack",
-        "status": "married",
-        "photo": "https://images.unsplash.com/photo-1591969851586-adbbd4accf81?crop=entropy&cs=tinysrgb&fm=jpg&ixlib=rb-1.2.1&q=80&raw_url=true&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=987",
-        "processTime": [ "1year", "1.5years"]
-      },
-      {
-        "id": "8",
-        "name": "Nina and Louie",
-        "status": "married",
-        "photo": "https://images.unsplash.com/photo-1591969851586-adbbd4accf81?crop=entropy&cs=tinysrgb&fm=jpg&ixlib=rb-1.2.1&q=80&raw_url=true&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=987",
-        "processTime": [ "1.5years", "2years"]
-      }
-    ]
-  }
+  "stories": [
+    {
+      "id": "0",
+      "coupleName": "Lara and Bob",
+      "ageGap": 21,
+      "processTime": "8-9 months",
+      "photo": "https://images.unsplash.com/photo-1591969851586-adbbd4accf81?crop=entropy&cs=tinysrgb&fm=jpg&ixlib=rb-1.2.1&q=80&raw_url=true&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=987",
+      "loveStory": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam. Sed nisi. Nulla quis sem at nibh elementum imperdiet. Duis sagittis ipsum. Praesent mauris. Fusce nec tellus sed augue semper porta. Mauris massa. Vestibulum lacinia arcu eget nulla.",
+      "Status": [
+        "Maried",
+        "In-progress",
+        "Visa-On-hand",
+        "Flying to US",
+        "Green Card Holder"
+      ]
+    },
+    {
+      "id": "1",
+      "coupleName": "Terry and Jenny",
+      "ageGap": 11,
+      "processTime": "1year",
+      "photo": "https://images.unsplash.com/photo-1637870996864-65dc1c00f4dc?crop=entropy&cs=tinysrgb&fm=jpg&ixlib=rb-1.2.1&q=80&raw_url=true&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2340",
+      "loveStory": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam. Sed nisi. Nulla quis sem at nibh elementum imperdiet. Duis sagittis ipsum. Praesent mauris. Fusce nec tellus sed augue semper porta. Mauris massa. Vestibulum lacinia arcu eget nulla.",
+      "Status": [
+        "Maried",
+        "In-progress",
+        "Visa-On-hand",
+        "Flying to US",
+        "Green Card Holder"
+      ]
+    },
+    {
+      "id": "2",
+      "coupleName": "Tina and James",
+      "ageGap": 15,
+      "processTime": "6-7 months",
+      "photo": "https://images.unsplash.com/photo-1426543881949-cbd9a76740a4?crop=entropy&cs=tinysrgb&fm=jpg&ixlib=rb-1.2.1&q=80&raw_url=true&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=987",
+      "loveStory": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam. Sed nisi. Nulla quis sem at nibh elementum imperdiet. Duis sagittis ipsum. Praesent mauris. Fusce nec tellus sed augue semper porta. Mauris massa. Vestibulum lacinia arcu eget nulla.",
+      "Status": [
+        "Maried",
+        "In-progress",
+        "Visa-On-hand",
+        "Flying to US",
+        "Green Card Holder"
+      ]
+    },
+    {
+      "id": "3",
+      "coupleName": "Almita and Peter",
+      "ageGap": 21,
+      "processTime": "1.5 years",
+      "photo": "https://images.unsplash.com/photo-1591969851586-adbbd4accf81?crop=entropy&cs=tinysrgb&fm=jpg&ixlib=rb-1.2.1&q=80&raw_url=true&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=987",
+      "loveStory": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam. Sed nisi. Nulla quis sem at nibh elementum imperdiet. Duis sagittis ipsum. Praesent mauris. Fusce nec tellus sed augue semper porta. Mauris massa. Vestibulum lacinia arcu eget nulla.",
+      "Status": [
+        "Maried",
+        "In-progress",
+        "Visa-On-hand",
+        "Flying to US",
+        "Green Card Holder"
+      ]
+    },
+    {
+      "id": "4",
+      "coupleName": "Joane and Michael",
+      "ageGap": 8,
+      "processTime": "9-10 months",
+      "photo": "https://images.unsplash.com/photo-1591969851586-adbbd4accf81?crop=entropy&cs=tinysrgb&fm=jpg&ixlib=rb-1.2.1&q=80&raw_url=true&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=987",
+      "loveStory": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam. Sed nisi. Nulla quis sem at nibh elementum imperdiet. Duis sagittis ipsum. Praesent mauris. Fusce nec tellus sed augue semper porta. Mauris massa. Vestibulum lacinia arcu eget nulla.",
+      "Status": [
+        "Maried",
+        "In-progress",
+        "Visa-On-hand",
+        "Flying to US",
+        "Green Card Holder"
+      ]
+    },
+    {
+      "id": "5",
+      "coupleName": "Joseph and Mira",
+      "ageGap": 31,
+      "processTime": "1 year",
+      "photo": "https://images.unsplash.com/photo-1506014299253-3725319c0f69?crop=entropy&cs=tinysrgb&fm=jpg&ixlib=rb-1.2.1&q=60&raw_url=true&ixid=MnwxMjA3fDB8MHxzZWFyY2h8OXx8Y291cGxlfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=800",
+      "loveStory": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam. Sed nisi. Nulla quis sem at nibh elementum imperdiet. Duis sagittis ipsum. Praesent mauris. Fusce nec tellus sed augue semper porta. Mauris massa. Vestibulum lacinia arcu eget nulla.",
+      "Status": [
+        "Maried",
+        "In-progress",
+        "Visa-On-hand",
+        "Flying to US",
+        "Green Card Holder"
+      ]
+    },
+    {
+      "id": "6",
+      "coupleName": "Gina and Keven",
+      "ageGap": 18,
+      "processTime": "2 years",
+      "photo": "https://images.unsplash.com/photo-1591969851586-adbbd4accf81?crop=entropy&cs=tinysrgb&fm=jpg&ixlib=rb-1.2.1&q=80&raw_url=true&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=987",
+      "loveStory": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam. Sed nisi. Nulla quis sem at nibh elementum imperdiet. Duis sagittis ipsum. Praesent mauris. Fusce nec tellus sed augue semper porta. Mauris massa. Vestibulum lacinia arcu eget nulla.",
+      "Status": [
+        "Maried",
+        "In-progress",
+        "Visa-On-hand",
+        "Flying to US",
+        "Green Card Holder"
+      ]
+    },
+    {
+      "id": "7",
+      "coupleName": "Mirasol and Jack",
+      "ageGap": 5,
+      "processTime": "1 year",
+      "photo": "https://images.unsplash.com/photo-1591969851586-adbbd4accf81?crop=entropy&cs=tinysrgb&fm=jpg&ixlib=rb-1.2.1&q=80&raw_url=true&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=987",
+      "loveStory": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam. Sed nisi. Nulla quis sem at nibh elementum imperdiet. Duis sagittis ipsum. Praesent mauris. Fusce nec tellus sed augue semper porta. Mauris massa. Vestibulum lacinia arcu eget nulla.",
+      "Status": [
+        "Maried",
+        "In-progress",
+        "Visa-On-hand",
+        "Flying to US",
+        "Green Card Holder"
+      ]
+    },
+    {
+      "id": "8",
+      "coupleName": "Nina and Louie",
+      "ageGap": 25,
+      "processTime": "8-9 months",
+      "photo": "https://images.unsplash.com/photo-1591969851586-adbbd4accf81?crop=entropy&cs=tinysrgb&fm=jpg&ixlib=rb-1.2.1&q=80&raw_url=true&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=987",
+      "loveStory": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam. Sed nisi. Nulla quis sem at nibh elementum imperdiet. Duis sagittis ipsum. Praesent mauris. Fusce nec tellus sed augue semper porta. Mauris massa. Vestibulum lacinia arcu eget nulla.",
+      "Status": [
+        "Maried",
+        "In-progress",
+        "Visa-On-hand",
+        "Flying to US",
+        "Green Card Holder"
+      ]
+    },
+    {
+      "name": "Ellen and Dong",
+      "processTime": "1 year",
+      "ageGap": 21,
+      "photo": "https://media.istockphoto.com/photos/shot-of-a-couple-enjoying-a-day-at-the-beach-picture-id1368004438?b=1&k=20&m=1368004438&s=170667a&w=0&h=V4RLavHF0IMAB2zGa9DN4ey44cixiITVqzQxaKdZ19I=",
+      "loveStory": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam. Sed nisi. Nulla quis sem at nibh elementum imperdiet. Duis sagittis ipsum. Praesent mauris. Fusce nec tellus sed augue semper porta. Mauris massa. Vestibulum lacinia arcu eget nulla.",
+      "Status": [
+        "Maried",
+        "In-progress",
+        "Visa-On-hand",
+        "Flying to US",
+        "Green Card Holder"
+      ],
+      "id": "9"
+    }
+  ]
+}

@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>K1 Success Stories</title>
+  <link href="https://fonts.googleapis.com/css?family=Karla:400,700|Rubik:400,400i,700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./assets/css/style.css" />
+</head>
+
+<body>
+  <header class="text-dark py-3 mb-3">
+    <div class="flex-row justify-space-between align-center container-fluid mx-auto">
+      <h1 class="text-dark p-3">K1 Success Stories</h1>
+      <h3 class="text-dark p-3">A K1 Success Stories Catalog</h3>
+    </div>
+    
+    <div class="container-fluid mx-auto" id="container">
+      <section class="p-3 my-4">
+        <h2 class="text-light">Your guide to the K1 process.</h2>
+        <p class="text-light">In terms of filing such documents or immigration application, we want to have an idea where to begin, what to expect, and we want to hear an inspiring stories of success. This site is intend on sharing successful stories of this K1 journey. Why don't you share your love ride and inspired others.</p>
+      </section>
+    </div>
+  </header>
+
+  <main class="container-fluid mx-auto">
+
+    <section class="p-3 mb-3 flex-row align-center">
+      <h2 class="text-dark col-12 col-lg-5">Add To Our Stories Catalog.</h2>
+      <div class="col-12 col-lg-7 flex-row text-center justify-space-around align-center">
+        <a class="btn col-12 col-md-auto mx-2" href="/stories">View Stories</a>
+        <a class="btn col-12 col-md-auto mx-2" href="/users">View Success Stories</a>
+      </div>
+    </section>
+
+    <section class="my-4 flex-row justify-space-between ">
+      <div class="col-12 col-lg-6 p-3 mb-3">
+        <h3 class="">Enter Story</h3>
+        <form id="stories-form">
+          <label for="couple-name" class="form-label">Couple Name</label>
+          <input type="text" id="couple-name" name="couple-name" class="form-input" placeholder="Enter Name">
+
+          <label for="age-gap" class="form-label">Age Gap</label>
+          <input type="number" id="age-gap" name="age-gap" class="form-input" placeholder="Enter Number">
+
+          <label for="file-input" class="form-label">Photo</label>
+          <input type="file" id="file-input" name="photo" class="form-input" placeholder="Select file">
+
+          <label for="textarea-input" class="form-label">Love Story</label>
+          <textarea type="text" id="textarea-input" name="textarea" class="form-input" placeholder="Share brief love story"></textarea>
+
+          <label for="time-input" class="form-label">Timeline</label>
+          <div class="flex-row justify-center">
+            <div class="col-auto mb-2">
+              <input type="radio" id="6-input" name="processTime" value="4-6 months" checked>
+              <label for="6-input">4-6 months</label>
+            </div>
+            <div class="col-auto mb-2">
+              <input type="radio" id="8-input" name="processTime" value="7-8 months">
+              <label for="8-input">7-8 months</label>
+            </div>
+            <div class="col-auto mb-2">
+              <input type="radio" id="10-input" name="processTime" value="9-10 months">
+              <label for="10-input">9-10 months</label>
+            </div>
+            <div class="col-auto mb-2">
+              <input type="radio" id="1year-input" name="processTime" value="1 year">
+              <label for="1year-input">1 year</label>
+            </div>
+            <div class="col-auto mb-2">
+              <input type="radio" id="1.5-input" name="processTime" value="1.5">
+              <label for="1.5-input">1.5 years</label>
+            </div>
+          </div>
+ 
+          <label for="status-input" class="form-label">Status</label>
+          <small>On macOS, use <kbd>command + click</kbd></small> <br />
+          <small>On Windows, use <kdb>ctrl + click</kdb></small>
+          <select multiple id="status-input" class="form-input" name="status">
+            <option value="married">Married</option>
+            <option value="in-progress">In-progress</option>
+            <option value="visa">Visa-On-hand</option>
+            <option value="flying">Flying to US</option>
+            <option value="green-card">Green Card Holder</option>
+          </select>
+
+          <button class="btn">Share Your Story</button>
+        </form>
+      </div>
+
+      <div class="col-12 col-lg-6 p-3 mb-3">
+        <h3 class="">Enter a Couple Name</h3>
+        <form id="couple-form">
+          <label for="couple-name" class="form-label">Couple Name</label>
+          <input type="text" id="couple-name" class="form-input input" placeholder="Enter Name"
+            name="couple-name">
+
+          <label for="age-input" class="form-label input">Age-gap</label>
+          <input type="number" id="age-input" class="form-input" placeholder="Enter Age" name="age">
+
+          <label for="favorite-story" class="form-label">Favorite Story</label>
+          <input type="text" class="form-input input" id="favorite-story" placeholder="Enter Favorite Story"
+            name="favorite-story">
+
+          <button class="btn">Add Story</button>
+        </form>
+      </div>
+
+    </section>
+
+
+  </main>
+
+  <script src="./assets/js/script.js"></script>
+</body>
+
+</html>
