@@ -12,7 +12,7 @@ const printResults = resultArr => {
       <p>Age gap: ${ageGap}</p>
       <p>Love Story: ${loveStory}</p>
       <p>Timeline: ${processTime.substring(0, 1).toUpperCase() + processTime.substring(1)}<br/>
-      Status: ${status.map(status => `${status.substring(0, 1).toUpperCase() + status.substring(1)}`).join(', ')}</p>
+     <p> Status: ${status.substring(0, 1).toUpperCase() + status.substring(1)}</p>
     </div>
   </div>
     `;
@@ -59,14 +59,19 @@ const handleGetStoriesSubmit = event => {
     processTime = '';
   }
 
-  const statusArr = [];
-  const selectedStatus = $storyForm.querySelector('[name="status"').selectedOptions;
+  
+  const statusCheckboxHTML = $storyForm.querySelectorAll('[name="status"]');
+  let status;
 
-  for (let i = 0; i < selectedStatus.length; i += 1) {
-   statusArr.push(selectedStatus[i].value);
+  for (let i = 0; i <statusCheckboxHTML.length; i += 1) {
+   if(statusCheckboxHTML[i].checked){
+     status = statusCheckboxHTML[i].value;
+   }
   }
 
-  const status = statusArr.join(',');
+  if(status === undefined){
+    status = '';
+  }
 
   const storyObject = { processTime, status };
 

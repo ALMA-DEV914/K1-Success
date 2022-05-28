@@ -20,10 +20,17 @@ const handleStoryFormSubmit = event => {
     processTime = '';
   }
 
-  const selectedStatus = $storyForm.querySelector('[name="status"').selectedOptions;
-  const status = [];
-  for (let i = 0; i < selectedStatus.length; i += 1) {
-    status.push(selectedStatus[i].value);
+  const statusCheckboxHTML = $storyForm.querySelectorAll('[name="status"');
+  let status;
+  
+  for (let i = 0; i <statusCheckboxHTML.length; i += 1) {
+    if(statusCheckboxHTML[i].checked){
+      status = statusCheckboxHTML[i].value;
+    };
+  }
+
+  if(status === undefined){
+    status = '';
   }
   const storyObject = { coupleName, ageGap, processTime, loveStory, status };
 

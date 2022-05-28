@@ -14,7 +14,8 @@
   <header class="py-4 mb-3">
     <div class="flex-row justify-space-between align-center container-fluid mx-auto">
       <h1 class="text-dark p-3">K1 Sucess User</h1>
-      <h3 class="text-dark  p-3">A K1 Success User Catalog</h3>
+      <a class="text-dark p-3">Login/Signup</a>
+     
     </div>
     <div class="container-fluid mx-auto" id="container">
       <section class="p-3 my-4">
@@ -34,7 +35,7 @@
     </section>
 
     <section class="my-2 flex-row justify-space-between">
-      <div class="col-12 col-lg-3 p-3">
+      <div class="col-12 col-lg-4 p-3">
         <h3 class="text-dark">Filter Your Search.</h3>
         <form id="stories-form">
           <label for="time-input" class="form-label">Timeline</label>
@@ -66,18 +67,17 @@
           </div>
  
           <label for="status-input" class="form-label">Status</label>
-          <select multiple id="status-input" class="form-input" name="status">
-            <option value="married">Married</option>
-            <option value="in-progress">In-progress</option>
-            <option value="visa-on-hand">Visa-On-hand</option>
-            <option value="flying-to-us">Flying-to-US</option>
-            <option value="green-card-holder">Green-Card-Holder</option>
-          </select>
+            <input type="checkbox" name="status" value="married">Married</input>
+            <input type="checkbox" name="status" value="in-progress">In-progress</input>
+            <input type="checkbox" name="status" value="visa-on-hand">Visa-On-hand</input>
+            <input type="checkbox" name="status" value="flying-to-us">Flying-to-US</input>
+            <input type="checkbox"  name= "status" value="green-card-holder">Green-Card-Holder</input>
+         
 
           <button class="btn">Get Stories</button>
         </form>
       </div>
-      <div class="col-12 col-lg-9 p-3">
+      <div class="col-12 col-lg-8 p-1">
 
         <div class="flex-row justify-space-between" id="display-area"></div>
       </div>

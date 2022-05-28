@@ -22,10 +22,7 @@ test('filters by query', () => {
       ageGap: 14,
      processTime: "1 year",
      loveStory: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam. Sed nisi. Nulla quis sem at nibh elementum imperdiet. Duis sagittis ipsum. Praesent mauris. Fusce nec tellus sed augue semper porta. Mauris massa. Vestibulum lacinia arcu eget nulla.',
-     Status: [
-      "Maried",
-      "Green Card Holder"
-    ]
+     status: "Maried"
 },
     {
       id: '4',
@@ -33,12 +30,7 @@ test('filters by query', () => {
       ageGap: 8,
       processTime: '4-6 months',
       loveStory: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam. Sed nisi. Nulla quis sem at nibh elementum imperdiet. Duis sagittis ipsum. Praesent mauris. Fusce nec tellus sed augue semper porta. Mauris massa. Vestibulum lacinia arcu eget nulla.',
-      Status: [
-     
-      "In-progress",
-      "Flying to US"
-    ]
-      
+      status: "In-progress"
     }
   ];
 
@@ -55,11 +47,8 @@ test('finds by id', () => {
       ageGap: 14,
      processTime: "1 year",
      loveStory: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam. Sed nisi. Nulla quis sem at nibh elementum imperdiet. Duis sagittis ipsum. Praesent mauris. Fusce nec tellus sed augue semper porta. Mauris massa. Vestibulum lacinia arcu eget nulla.',
-     loveStory: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam. Sed nisi. Nulla quis sem at nibh elementum imperdiet. Duis sagittis ipsum. Praesent mauris. Fusce nec tellus sed augue semper porta. Mauris massa. Vestibulum lacinia arcu eget nulla.',
-     Status: [
-     
-      "In-progress"
-    ]
+     status: "In-progress"
+    
 },
     {
       id: '4',
@@ -67,11 +56,7 @@ test('finds by id', () => {
       ageGap: 8,
       processTime: '4-6 months',
       loveStory: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam. Sed nisi. Nulla quis sem at nibh elementum imperdiet. Duis sagittis ipsum. Praesent mauris. Fusce nec tellus sed augue semper porta. Mauris massa. Vestibulum lacinia arcu eget nulla.',
-      Status: [
-      "Maried",
-      "Green Card Holder"
-    ]
-      
+      status: "Maried"
     }
   ];
 
@@ -88,10 +73,7 @@ test('validates status', () => {
     ageGap: 14,
      processTime: "1 year",
      loveStory: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam. Sed nisi. Nulla quis sem at nibh elementum imperdiet. Duis sagittis ipsum. Praesent mauris. Fusce nec tellus sed augue semper porta. Mauris massa. Vestibulum lacinia arcu eget nulla.',
-     Status: [
-      "Maried",
-      "Green Card Holder"
-    ]
+     status: "Maried"
   };
 
   const invalidStory = {
