@@ -31,14 +31,14 @@
       <h2 class="text-dark col-12 col-lg-5">Add To Our Stories Catalog.</h2>
       <div class="col-12 col-lg-7 flex-row text-center justify-space-around align-center">
         <a class="btn col-12 col-md-auto mx-2" href="/stories">View Stories</a>
-        <a class="btn col-12 col-md-auto mx-2" href="/users">View Success Stories</a>
+        <a class="btn col-12 col-md-auto mx-2" href="/users">View K1 Success Users</a>
       </div>
     </section>
 
     <section class="my-4 flex-row justify-space-between ">
       <div class="col-12 col-lg-6 p-3 mb-3">
         <h3 class="">Enter Story</h3>
-        <form id="stories-form">
+        <form id="story-form">
           <label for="couple-name" class="form-label">Couple Name</label>
           <input type="text" id="couple-name" name="couple-name" class="form-input" placeholder="Enter Name">
 
@@ -49,7 +49,7 @@
           <input type="file" id="file-input" name="photo" class="form-input" placeholder="Select file">
 
           <label for="textarea-input" class="form-label">Love Story</label>
-          <textarea type="text" id="textarea-input" name="textarea" class="form-input" placeholder="Share brief love story"></textarea>
+          <textarea type="text" id="textarea-input" name=" loveStory" class="form-input" placeholder="Share brief love story"></textarea>
 
           <label for="time-input" class="form-label">Timeline</label>
           <div class="flex-row justify-center">
@@ -76,14 +76,12 @@
           </div>
  
           <label for="status-input" class="form-label">Status</label>
-          <small>On macOS, use <kbd>command + click</kbd></small> <br />
-          <small>On Windows, use <kdb>ctrl + click</kdb></small>
           <select multiple id="status-input" class="form-input" name="status">
             <option value="married">Married</option>
             <option value="in-progress">In-progress</option>
-            <option value="visa">Visa-On-hand</option>
-            <option value="flying">Flying to US</option>
-            <option value="green-card">Green Card Holder</option>
+            <option value="visa-on-hand">Visa-On-hand</option>
+            <option value="flying-to-us">Flying to US</option>
+            <option value="green-card-holder">Green Card Holder</option>
           </select>
 
           <button class="btn">Share Your Story</button>
@@ -91,18 +89,18 @@
       </div>
 
       <div class="col-12 col-lg-6 p-3 mb-3">
-        <h3 class="">Enter a Couple Name</h3>
+        <h3 class="">Enter a User Name</h3>
         <form id="couple-form">
-          <label for="couple-name" class="form-label">Couple Name</label>
-          <input type="text" id="couple-name" class="form-input input" placeholder="Enter Name"
-            name="couple-name">
+          <label for="user-name" class="form-label">Couple Name</label>
+          <input type="text" id="user-name" class="form-input input" placeholder="Enter Name"
+            name="name">
 
           <label for="age-input" class="form-label input">Age-gap</label>
           <input type="number" id="age-input" class="form-input" placeholder="Enter Age" name="age">
 
           <label for="favorite-story" class="form-label">Favorite Story</label>
           <input type="text" class="form-input input" id="favorite-story" placeholder="Enter Favorite Story"
-            name="favorite-story">
+            name="favoriteStory">
 
           <button class="btn">Add Story</button>
         </form>

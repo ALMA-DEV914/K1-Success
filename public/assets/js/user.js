@@ -17,7 +17,7 @@ const printResults = resultArr => {
     `;
   });
 
-  $displayArea.innerHTML = animalHTML.join('');
+  $displayArea.innerHTML = storyHTML.join('');
 };
 
 const getUsers = () => {

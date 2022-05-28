@@ -13,8 +13,8 @@
 <body>
   <header class="py-4 mb-3">
     <div class="flex-row justify-space-between align-center container-fluid mx-auto">
-      <h1 class="text-light bg-dark p-3">K1 Sucess User</h1>
-      <h3 class="text-light bg-dark p-3">A K1 Success User Catalog</h3>
+      <h1 class="text-dark p-3">K1 Sucess User</h1>
+      <h3 class="text-dark  p-3">A K1 Success User Catalog</h3>
     </div>
     <div class="container-fluid mx-auto" id="container">
       <section class="p-3 my-4">
@@ -56,14 +56,16 @@
               <label for="1year-input">1 year</label>
             </div>
             <div class="col-auto mb-2">
-              <input type="radio" id="1.5-input" name="processTime" value="1.5">
+              <input type="radio" id="1.5-input" name="processTime" value="1.5 years">
               <label for="1.5-input">1.5 years</label>
+            </div>
+            <div class="col-auto mb-2">
+              <input type="radio" id="2-input" name="processTime" value="2 years">
+              <label for="2-input">2 years</label>
             </div>
           </div>
  
           <label for="status-input" class="form-label">Status</label>
-          <small>On macOS, use <kbd>command + click</kbd></small> <br />
-          <small>On Windows, use <kdb>ctrl + click</kdb></small>
           <select multiple id="status-input" class="form-input" name="status">
             <option value="married">Married</option>
             <option value="in-progress">In-progress</option>

@@ -4,16 +4,14 @@ const $displayArea = document.querySelector('#display-area');
 const printResults = resultArr => {
   console.log(resultArr);
 
-  const storyHTML = resultArr.map(({ id, coupleName, ageGap, loveStory, photo, processTime, status }) => {
+  const storyHTML = resultArr.map(({ id, coupleName, ageGap, loveStory, processTime, status }) => {
     return `
   <div class="col-12 col-md-5 mb-3">
     <div class="card p-3" data-id=${id}>
       <h4 class="text-primary">${coupleName}</h4>
       <p>Age gap: ${ageGap}</p>
       <p>Love Story: ${loveStory}</p>
-      <img> ${photo}</im>
       <p>Timeline: ${processTime.substring(0, 1).toUpperCase() + processTime.substring(1)}<br/>
-      Story: ${story.substring(0, 1).toUpperCase() + story.substring(1)}<br/>
       Status: ${status
         .map(status => `${status.substring(0, 1).toUpperCase() + status.substring(1)}`)
         .join(', ')}</p>

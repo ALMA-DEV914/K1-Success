@@ -3,12 +3,12 @@ const $storyForm = document.querySelector('#story-form');
 const handleStoryFormSubmit = event => {
   event.preventDefault();
 
-  // get animal data and organize it
+  // getstory data and organize it
   const name = $storyForm.querySelector('[name="couple-name"]').value;
   const photo = $storyForm.querySelector('[name="file-input"]').value;
   const ageGap = $storyForm.querySelector('[name="age-gap]').value;
-  const story = $storyForm.querySelector('[name="textarea"]').value;
-  const timeRadioHTML = $storyForm.querySelectorAll('[name="time-input"]');
+  const loveStory = $storyForm.querySelector('[name="textarea"]').value;
+  const processTimeRadioHTML = $storyForm.querySelectorAll('[name="time-input"]');
   let processTime;
 
   for (let i = 0; i < processTimeRadioHTML.length; i += 1) {
@@ -26,7 +26,7 @@ const handleStoryFormSubmit = event => {
   for (let i = 0; i < selectedStatus.length; i += 1) {
     status.push(selectedStatus[i].value);
   }
-  const storyObject = { name, photo, story, processTime, status };
+  const storyObject = { name, photo, ageGap, processTime, loveStory, status };
 
   fetch('/api/stories', {
     method: 'POST',

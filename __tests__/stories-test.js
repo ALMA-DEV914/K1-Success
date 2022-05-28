@@ -1,82 +1,130 @@
 //call the file system functions to write the file
 const fs = require('fs');
 // call the functions to be executed and the file path
-const { filterByQuery, findById, createNewAnimal, validateAnimal } = require('../lib/animals.js');
-const { animals } = require('../data/animals');
+const { filterByQuery, findById, createNewAnimal, validateAnimal, validateStory } = require('../lib/stories.js');
+const { stories } = require('../data/stories');
 // call the mock functions to prevent writing on the file
 jest.mock('fs');
 // write the test to create the object of new animal
-test('creates an animal object', () => {
-  const animal = createNewAnimal({ name: 'Darlene', id: 'jhgdja3ng2' }, animals);
+test('creates an story object', () => {
+  const story = createNewStory({ coupleName: 'Darlene and Jack', id: 'jhgdja3ng2' }, stories);
 // expected value to be return 
-  expect(animal.name).toBe('Darlene');
-  expect(animal.id).toBe('jhgdja3ng2');
+  expect(story.coupleName).toBe('Darlene and Jack');
+  expect(story.id).toBe('jhgdja3ng2');
 });
 
 test('filters by query', () => {
-  const startingAnimals = [
+  const startingStories = [
     {
       id: '3',
-      name: 'Erica',
-      species: 'gorilla',
-      diet: 'omnivore',
-      personalityTraits: ['quirky', 'rash']
-    },
+      coupleName: 'Erica and James',
+      ageGap: 14,
+     processTime: "1 year",
+     loveStory: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam. Sed nisi. Nulla quis sem at nibh elementum imperdiet. Duis sagittis ipsum. Praesent mauris. Fusce nec tellus sed augue semper porta. Mauris massa. Vestibulum lacinia arcu eget nulla.',
+     loveStory: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam. Sed nisi. Nulla quis sem at nibh elementum imperdiet. Duis sagittis ipsum. Praesent mauris. Fusce nec tellus sed augue semper porta. Mauris massa. Vestibulum lacinia arcu eget nulla.',
+     Status: [
+      "Maried",
+      "In-progress",
+      "Visa-On-hand",
+      "Flying to US",
+      "Green Card Holder"
+    ]
+},
     {
       id: '4',
-      name: 'Noel',
-      species: 'bear',
-      diet: 'carnivore',
-      personalityTraits: ['impish', 'sassy', 'brave']
+      coupleName: 'Noel and Jessica',
+      ageGap: 8,
+      processTime: '4-6 months',
+      loveStory: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam. Sed nisi. Nulla quis sem at nibh elementum imperdiet. Duis sagittis ipsum. Praesent mauris. Fusce nec tellus sed augue semper porta. Mauris massa. Vestibulum lacinia arcu eget nulla.',
+      Status: [
+      "Maried",
+      "In-progress",
+      "Visa-On-hand",
+      "Flying to US",
+      "Green Card Holder"
+    ]
+      
     }
   ];
 
-  const updatedAnimals = filterByQuery({ species: 'gorilla' }, startingAnimals);
+  const updatedStories = filterByQuery({ ageGap: '8-9 months' }, startingStories);
 
-  expect(updatedAnimals.length).toEqual(1);
+  expect(updatedStories.length).toEqual(1);
 });
 
 test('finds by id', () => {
-  const startingAnimals = [
+  const startingStories = [
     {
       id: '3',
-      name: 'Erica',
-      species: 'gorilla',
-      diet: 'omnivore',
-      personalityTraits: ['quirky', 'rash']
-    },
+      coupleName: 'Erica and James',
+      ageGap: 14,
+     processTime: "1 year",
+     loveStory: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam. Sed nisi. Nulla quis sem at nibh elementum imperdiet. Duis sagittis ipsum. Praesent mauris. Fusce nec tellus sed augue semper porta. Mauris massa. Vestibulum lacinia arcu eget nulla.',
+     loveStory: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam. Sed nisi. Nulla quis sem at nibh elementum imperdiet. Duis sagittis ipsum. Praesent mauris. Fusce nec tellus sed augue semper porta. Mauris massa. Vestibulum lacinia arcu eget nulla.',
+     Status: [
+      "Maried",
+      "In-progress",
+      "Visa-On-hand",
+      "Flying to US",
+      "Green Card Holder"
+    ]
+},
     {
       id: '4',
-      name: 'Noel',
-      species: 'bear',
-      diet: 'carnivore',
-      personalityTraits: ['impish', 'sassy', 'brave']
+      coupleName: 'Noel and Jessica',
+      ageGap: 8,
+      processTime: '4-6 months',
+      loveStory: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam. Sed nisi. Nulla quis sem at nibh elementum imperdiet. Duis sagittis ipsum. Praesent mauris. Fusce nec tellus sed augue semper porta. Mauris massa. Vestibulum lacinia arcu eget nulla.',
+      Status: [
+      "Maried",
+      "In-progress",
+      "Visa-On-hand",
+      "Flying to US",
+      "Green Card Holder"
+    ]
+      
     }
   ];
 
-  const result = findById('3', startingAnimals);
+   
+  const result = findById('3', startingStories);
 
-  expect(result.name).toBe('Erica');
+  expect(result.name).toBe('Erica and James');
 });
 
 test('validates personality traits', () => {
-  const animal = {
+  const story = {
     id: '3',
-    name: 'Erica',
-    species: 'gorilla',
-    diet: 'omnivore',
-    personalityTraits: ['quirky', 'rash']
+    name: 'Erica and james',
+    ageGap: 14,
+     processTime: "1 year",
+     loveStory: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam. Sed nisi. Nulla quis sem at nibh elementum imperdiet. Duis sagittis ipsum. Praesent mauris. Fusce nec tellus sed augue semper porta. Mauris massa. Vestibulum lacinia arcu eget nulla.',
+     Status: [
+      "Maried",
+      "In-progress",
+      "Visa-On-hand",
+      "Flying to US",
+      "Green Card Holder"
+    ]
   };
 
-  const invalidAnimal = {
+  const invalidStory = {
     id: '3',
-    name: 'Erica',
-    species: 'gorilla',
-    diet: 'omnivore'
+    name: 'Erica and James',
+    ageGap: '14',
+     processTime: "1 year",
+     loveStory: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam. Sed nisi. Nulla quis sem at nibh elementum imperdiet. Duis sagittis ipsum. Praesent mauris. Fusce nec tellus sed augue semper porta. Mauris massa. Vestibulum lacinia arcu eget nulla.',
+     Status: [
+      "Maried",
+      "In-progress",
+      "Visa-On-hand",
+      "Flying to US",
+      "Green Card Holder"
+    ]
   };
 
-  const result = validateAnimal(animal);
-  const result2 = validateAnimal(invalidAnimal);
+  const result = validateStory(story);
+  const result2 = validateStory(invalidStory);
 
   expect(result).toBe(true);
   expect(result2).toBe(false);
