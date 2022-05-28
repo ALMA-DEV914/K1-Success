@@ -6,7 +6,7 @@ const printResults = resultArr => {
 
   const storyHTML = resultArr.map(({ id, coupleName, ageGap, loveStory, processTime, status }) => {
     return `
-  <div class="col-12 col-md-5 mb-3">
+  <div class="col-12 col-md-6 mb-3">
     <div class="card p-3" data-id=${id}>
       <h4 class="text-primary">${coupleName}</h4>
       <p>Age gap: ${ageGap}</p>
