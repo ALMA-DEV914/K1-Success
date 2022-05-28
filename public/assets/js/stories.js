@@ -12,9 +12,7 @@ const printResults = resultArr => {
       <p>Age gap: ${ageGap}</p>
       <p>Love Story: ${loveStory}</p>
       <p>Timeline: ${processTime.substring(0, 1).toUpperCase() + processTime.substring(1)}<br/>
-      Status: ${status
-        .map(status => `${status.substring(0, 1).toUpperCase() + status.substring(1)}`)
-        .join(', ')}</p>
+      Status: ${status.map(status => `${status.substring(0, 1).toUpperCase() + status.substring(1)}`).join(', ')}</p>
     </div>
   </div>
     `;
@@ -31,6 +29,18 @@ const getStories = (formData = {}) => {
   });
 
   console.log(queryUrl);
+
+  fetch(queryUrl)
+    .then(response => {
+      if (!response.ok) {
+        return alert('Error: ' + response.statusText);
+      }
+      return response.json();
+    })
+    .then(storyData => {
+      console.log(storyData);
+      printResults(storyData);
+    });
 
 };
 

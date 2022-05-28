@@ -1,10 +1,11 @@
 //call the file system functions to write the file
 const fs = require('fs');
 // call the functions to be executed and the file path
-const { filterByQuery, findById, createNewAnimal, validateAnimal, validateStory } = require('../lib/stories.js');
+const { filterByQuery, findById, createNewStory,  validateStory } = require('../lib/stories.js');
 const { stories } = require('../data/stories');
 // call the mock functions to prevent writing on the file
 jest.mock('fs');
+
 // write the test to create the object of new animal
 test('creates an story object', () => {
   const story = createNewStory({ coupleName: 'Darlene and Jack', id: 'jhgdja3ng2' }, stories);
@@ -21,12 +22,8 @@ test('filters by query', () => {
       ageGap: 14,
      processTime: "1 year",
      loveStory: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam. Sed nisi. Nulla quis sem at nibh elementum imperdiet. Duis sagittis ipsum. Praesent mauris. Fusce nec tellus sed augue semper porta. Mauris massa. Vestibulum lacinia arcu eget nulla.',
-     loveStory: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam. Sed nisi. Nulla quis sem at nibh elementum imperdiet. Duis sagittis ipsum. Praesent mauris. Fusce nec tellus sed augue semper porta. Mauris massa. Vestibulum lacinia arcu eget nulla.',
      Status: [
       "Maried",
-      "In-progress",
-      "Visa-On-hand",
-      "Flying to US",
       "Green Card Holder"
     ]
 },
@@ -37,11 +34,9 @@ test('filters by query', () => {
       processTime: '4-6 months',
       loveStory: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam. Sed nisi. Nulla quis sem at nibh elementum imperdiet. Duis sagittis ipsum. Praesent mauris. Fusce nec tellus sed augue semper porta. Mauris massa. Vestibulum lacinia arcu eget nulla.',
       Status: [
-      "Maried",
+     
       "In-progress",
-      "Visa-On-hand",
-      "Flying to US",
-      "Green Card Holder"
+      "Flying to US"
     ]
       
     }
@@ -62,11 +57,8 @@ test('finds by id', () => {
      loveStory: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam. Sed nisi. Nulla quis sem at nibh elementum imperdiet. Duis sagittis ipsum. Praesent mauris. Fusce nec tellus sed augue semper porta. Mauris massa. Vestibulum lacinia arcu eget nulla.',
      loveStory: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam. Sed nisi. Nulla quis sem at nibh elementum imperdiet. Duis sagittis ipsum. Praesent mauris. Fusce nec tellus sed augue semper porta. Mauris massa. Vestibulum lacinia arcu eget nulla.',
      Status: [
-      "Maried",
-      "In-progress",
-      "Visa-On-hand",
-      "Flying to US",
-      "Green Card Holder"
+     
+      "In-progress"
     ]
 },
     {
@@ -77,9 +69,6 @@ test('finds by id', () => {
       loveStory: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam. Sed nisi. Nulla quis sem at nibh elementum imperdiet. Duis sagittis ipsum. Praesent mauris. Fusce nec tellus sed augue semper porta. Mauris massa. Vestibulum lacinia arcu eget nulla.',
       Status: [
       "Maried",
-      "In-progress",
-      "Visa-On-hand",
-      "Flying to US",
       "Green Card Holder"
     ]
       
@@ -92,7 +81,7 @@ test('finds by id', () => {
   expect(result.name).toBe('Erica and James');
 });
 
-test('validates personality traits', () => {
+test('validates status', () => {
   const story = {
     id: '3',
     name: 'Erica and james',
@@ -101,9 +90,6 @@ test('validates personality traits', () => {
      loveStory: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam. Sed nisi. Nulla quis sem at nibh elementum imperdiet. Duis sagittis ipsum. Praesent mauris. Fusce nec tellus sed augue semper porta. Mauris massa. Vestibulum lacinia arcu eget nulla.',
      Status: [
       "Maried",
-      "In-progress",
-      "Visa-On-hand",
-      "Flying to US",
       "Green Card Holder"
     ]
   };
@@ -114,13 +100,7 @@ test('validates personality traits', () => {
     ageGap: '14',
      processTime: "1 year",
      loveStory: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam. Sed nisi. Nulla quis sem at nibh elementum imperdiet. Duis sagittis ipsum. Praesent mauris. Fusce nec tellus sed augue semper porta. Mauris massa. Vestibulum lacinia arcu eget nulla.',
-     Status: [
-      "Maried",
-      "In-progress",
-      "Visa-On-hand",
-      "Flying to US",
-      "Green Card Holder"
-    ]
+     
   };
 
   const result = validateStory(story);
