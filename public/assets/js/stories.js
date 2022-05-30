@@ -8,7 +8,7 @@ const printResults = resultArr => {
     return `
   <div class="col-12 col-md-6 mb-3">
     <div class="card p-3" data-id=${id}>
-      <h4 class="text-primary">${coupleName}</h4>
+      <h4 class="text-light">${coupleName}</h4>
       <p>Age gap: ${ageGap}</p>
       <p>Love Story: ${loveStory}</p>
       <p>Timeline: ${processTime.substring(0, 1).toUpperCase() + processTime.substring(1)}<br/>
@@ -57,23 +57,21 @@ const handleGetStoriesSubmit = event => {
 
   if (processTime === undefined) {
     processTime = '';
-  }
+  } 
 
-  
-  const statusCheckboxHTML = $storyForm.querySelectorAll('[name="status"]');
+  const statusRadioHTML = $storyForm.querySelectorAll('[name="status"]');
   let status;
 
-  for (let i = 0; i <statusCheckboxHTML.length; i += 1) {
-   if(statusCheckboxHTML[i].checked){
-     status = statusCheckboxHTML[i].value;
-   }
+  for (let i = 0; i <statusRadioHTML.length; i += 1) {
+    if (statusRadioHTML[i].checked) {
+     status = statusRadioHTML[i].value;
+    }
   }
 
-  if(status === undefined){
+  if (status === undefined) {
     status = '';
-  }
-
-  const storyObject = { processTime, status };
+  } 
+  const storyObject = {processTime, status};
 
   getStories(storyObject);
 };

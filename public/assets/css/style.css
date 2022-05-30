@@ -40,9 +40,7 @@ h6 {
   color: var(--secondary);
   line-height: 1.25;
 }
-header{
-  height: 70vh;
-}
+
 h1 {
   font-size: 2.25rem;
 }
@@ -77,11 +75,15 @@ a {
 }
 
 header {
-  background-size: cover;
-  background-repeat: no-repeat;
+  background-color: var(--primary);
   background-image: url('../images/header-bg.jpg');
+  background-size: cover;
+  height: 600px;
 }
-
+#container{
+  width: 60%;
+  margin: 10% auto;
+}
 nav {
   width: 100%;
   margin-top: 10px;
@@ -131,15 +133,15 @@ nav a:hover {
 /* CARDS */
 .card {
   margin: 0 0 20px 0;
-  border: 3px solid var(--light);
+  border: 3px solid var(--quaternary);
   border-radius: var(--border-radius);
-  background-color: lightgray;
-  color: var(--dark);
+  background-color: var(--dark);
+  color: var(--light);
 }
 
 .card-header {
   color: var(--light);
-  background-color: var(--secondary);
+  background-color: var(--dark);
   padding: 0.625rem;
   border-radius: calc(0.18rem - 1px) calc(0.18rem - 1px) 0 0;
 }
@@ -232,12 +234,9 @@ nav a:hover {
 }
 
 .container-fluid {
-  width: 85%;
+  width: 92%;
 }
-#container{
-  width: 50%;
-  margin: 10% auto;
-}
+
 /* DISPLAY */
 .display-none {
   display: none;
@@ -493,7 +492,6 @@ nav a:hover {
 .my-4 {
   margin-top: var(--spacing-four);
   margin-bottom: var(--spacing-four);
-  
 }
 
 .my-5 {

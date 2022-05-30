@@ -12,8 +12,7 @@
       "id": "1",
       "coupleName": "Terry and Jenny",
       "ageGap": 11,
-      "processTime": "1year",
-      
+      "processTime": "1 year",
       "loveStory": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam. Sed nisi. Nulla quis sem at nibh elementum imperdiet. Duis sagittis ipsum. Praesent mauris. Fusce nec tellus sed augue semper porta. Mauris massa. Vestibulum lacinia arcu eget nulla.",
       "status": "Visa-On-hand"
         
@@ -23,7 +22,6 @@
       "coupleName": "Tina and James",
       "ageGap": 15,
       "processTime": "6-7 months",
-      
       "loveStory": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam. Sed nisi. Nulla quis sem at nibh elementum imperdiet. Duis sagittis ipsum. Praesent mauris. Fusce nec tellus sed augue semper porta. Mauris massa. Vestibulum lacinia arcu eget nulla.",
       "status": "In-progress"
     },
@@ -32,8 +30,7 @@
       "coupleName": "Almita and Peter",
       "ageGap": 21,
       "processTime": "1.5 years",
-     
-      "loveStory": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam. Sed nisi. Nulla quis sem at nibh elementum imperdiet. Duis sagittis ipsum. Praesent mauris. Fusce nec tellus sed augue semper porta. Mauris massa. Vestibulum lacinia arcu eget nulla.",
+     "loveStory": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam. Sed nisi. Nulla quis sem at nibh elementum imperdiet. Duis sagittis ipsum. Praesent mauris. Fusce nec tellus sed augue semper porta. Mauris massa. Vestibulum lacinia arcu eget nulla.",
       "status": "Green Card Holder"
       
     },
@@ -42,8 +39,7 @@
       "coupleName": "Joane and Michael",
       "ageGap": 8,
       "processTime": "9-10 months",
-     
-      "loveStory": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam. Sed nisi. Nulla quis sem at nibh elementum imperdiet. Duis sagittis ipsum. Praesent mauris. Fusce nec tellus sed augue semper porta. Mauris massa. Vestibulum lacinia arcu eget nulla.",
+     "loveStory": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam. Sed nisi. Nulla quis sem at nibh elementum imperdiet. Duis sagittis ipsum. Praesent mauris. Fusce nec tellus sed augue semper porta. Mauris massa. Vestibulum lacinia arcu eget nulla.",
       "status": "Flying to US"
       
     },
@@ -52,7 +48,6 @@
       "coupleName": "Joseph and Mira",
       "ageGap": 31,
       "processTime": "1 year",
-      
       "loveStory": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam. Sed nisi. Nulla quis sem at nibh elementum imperdiet. Duis sagittis ipsum. Praesent mauris. Fusce nec tellus sed augue semper porta. Mauris massa. Vestibulum lacinia arcu eget nulla.",
       "status": "In-progress"
     },
@@ -61,7 +56,6 @@
       "coupleName": "Gina and Keven",
       "ageGap": 18,
       "processTime": "2 years",
-      
       "loveStory": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam. Sed nisi. Nulla quis sem at nibh elementum imperdiet. Duis sagittis ipsum. Praesent mauris. Fusce nec tellus sed augue semper porta. Mauris massa. Vestibulum lacinia arcu eget nulla.",
       "status": "Maried"
       
@@ -71,7 +65,6 @@
       "coupleName": "Mirasol and Jack",
       "ageGap": 5,
       "processTime": "1 year",
-     
       "loveStory": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam. Sed nisi. Nulla quis sem at nibh elementum imperdiet. Duis sagittis ipsum. Praesent mauris. Fusce nec tellus sed augue semper porta. Mauris massa. Vestibulum lacinia arcu eget nulla.",
       "status":  "In-progress"
        
@@ -81,19 +74,9 @@
       "coupleName": "Nina and Louie",
       "ageGap": 25,
       "processTime": "8-9 months",
-      
       "loveStory": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam. Sed nisi. Nulla quis sem at nibh elementum imperdiet. Duis sagittis ipsum. Praesent mauris. Fusce nec tellus sed augue semper porta. Mauris massa. Vestibulum lacinia arcu eget nulla.",
       "status":  "Green Card Holder"
      
-    },
-    {
-      "coupleName": "Ellen and Dong",
-      "processTime": "1 year",
-      "ageGap": 21,
-     
-      "loveStory": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam. Sed nisi. Nulla quis sem at nibh elementum imperdiet. Duis sagittis ipsum. Praesent mauris. Fusce nec tellus sed augue semper porta. Mauris massa. Vestibulum lacinia arcu eget nulla.",
-      "status": "Green Card Holder",
-       "id": "9"
     }
   ]
 }

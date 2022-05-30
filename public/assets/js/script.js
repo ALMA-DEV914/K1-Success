@@ -5,8 +5,8 @@ const handleStoryFormSubmit = event => {
 
   // getstory data and organize it
   const coupleName = $storyForm.querySelector('[name="couple-name"]').value;
-  const ageGap = $storyForm.querySelector('[name="age-gap]').value;
-  const loveStory = $storyForm.querySelector('[name="textarea"]').value;
+  const ageGap = $storyForm.querySelector('[name="age-gap"]').value;
+  const loveStory = $storyForm.querySelector('[name="loveStory"]').value;
   const processTimeRadioHTML = $storyForm.querySelectorAll('[name="time-input"]');
   let processTime;
 
@@ -20,25 +20,26 @@ const handleStoryFormSubmit = event => {
     processTime = '';
   }
 
-  const statusCheckboxHTML = $storyForm.querySelectorAll('[name="status"');
+  const statusRadioHTML = $storyForm.querySelectorAll('[name="status"');
   let status;
   
-  for (let i = 0; i <statusCheckboxHTML.length; i += 1) {
-    if(statusCheckboxHTML[i].checked){
-      status = statusCheckboxHTML[i].value;
+  for (let i = 0; i <statusRadioHTML.length; i += 1) {
+    if(statusRadioHTML[i].checked){
+      status = statusRadioHTML[i].value;
     };
   }
 
   if(status === undefined){
     status = '';
   }
+  
   const storyObject = { coupleName, ageGap, processTime, loveStory, status };
 
   fetch('/api/stories', {
     method: 'POST',
     headers: {
       Accept: 'application/json',
-      'Content-Type': 'apllication/json'
+      'Content-Type': 'aplication/json'
     },
     body: JSON.stringify(storyObject)
   })
@@ -54,6 +55,6 @@ const handleStoryFormSubmit = event => {
 })
 };
 
-$storyForm.addEventListener('submit', handleStoryFormSubmit);
 
+$storyForm.addEventListener('submit', handleStoryFormSubmit);
 
